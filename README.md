@@ -21,9 +21,19 @@ Random Forest was selected as the final production model due to significant impr
 
 ---
 
-## How to Run
+# ML Classification Model Training & Hyperparameter Tuning
 
-1. Clone the repository:
-```bash
-git clone [https://github.com/iniya-27/ml-classification-model-tuning.git](https://github.com/iniya-27/ml-classification-model-tuning.git)
-cd ml-classification-model-tuning
+## Project Overview
+This repository implements and evaluates multiple supervised machine learning algorithms (**Logistic Regression**, **Decision Tree**, and **Random Forest**) to classify health metrics data. 
+
+Random Forest was selected as the final production model due to significant improvements in **accuracy** and **F1-score** following hyperparameter tuning (`n_estimators=100`, `max_depth=5`).
+
+---
+
+## Model Evaluation Summary
+
+| Model | Accuracy | F1-Score | Status |
+|---|---|---|---|
+| Logistic Regression | 0.8500 | 0.8400 | Baseline |
+| Decision Tree | 0.8800 | 0.8750 | Evaluated |
+| **Random Forest (Tuned)** | **0.9400** | **0.9380** | **Selected Final Model** |
